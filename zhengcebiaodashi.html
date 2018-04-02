@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title> 
+</head>
+<body>
+	<input type="text"><input type="button" value="sub">
+	<div></div>
+	<script>
+	var inp=document.getElementsByTagName("input")[0];
+	var btn=document.getElementsByTagName("input")[1];
+	var txt=document.getElementsByTagName("div")[0];
+
+	btn.onclick=function(){
+		var re=/可东|刘喜|国庆/g;
+
+		txt.innerHTML=inp.value.replace(re,"***");
+	}
+	</script>
+</body>
+</html>
